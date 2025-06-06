@@ -17,4 +17,22 @@ programa {
       escreva("a media arimetica e:media_arimetica")
   }
 }
+programa {
+  funcao inicio() {
+    //Declaração de variáveis 
+    real janeiro,fevereiro,marco,media_Aritmetica
 
+    //Entrada de dados
+    escreva("Informe o valor gasto em janeiro")
+    leia (janeiro)
+    escreva("Informe o valor gasto em fevereiro")
+    leia(fevereiro)
+    escreva("Informe o valor gasto em março")
+
+    //Processamento 
+    media_Aritmetica= janeiro+fevereiro+marco
+
+    //Saída de dados 
+    escreva("A média aritmética é", media_Aritmetica)
+  }
+}
