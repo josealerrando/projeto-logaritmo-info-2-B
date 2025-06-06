@@ -58,7 +58,23 @@ programa {
 
 
   }
+programa}
+//Declaração de variável
+    real raio, diametro, comprimento, area
+
+    //Entrada de Dados
+    escreva("Informe o valor do raio: ")
+    leia(raio)
+
+    //Processamento
+    diametro = raio * 2
+    comprimento = 3.14 * diametro
+    area = (raio * raio) * 3.14
+
+    //Saida de Dados
+    escreva("Com o raio ", raio , "o diametro sera " , diametro, " o comprimento sera ", comprimento, " e area sera ", area )
 }
+programa{
 //Declaração de variável
     real raio, diametro, comprimento, area
 
@@ -73,22 +89,7 @@ programa {
 
     //Saida de Dados
     escreva("Com o raio ", raio , " o diametro sera " , diametro, " o comprimento sera ", comprimento, " e area sera ", area )
-
-//Declaração de variável
-    real raio, diametro, comprimento, area
-
-    //Entrada de Dados
-    escreva("Informe o valor do raio: ")
-    leia(raio)
-
-    //Processamento
-    diametro = raio * 2
-    comprimento = 3.14 * diametro
-    area = (raio * raio) * 3.14
-
-    //Saida de Dados
-    escreva("Com o raio ", raio , " o diametro sera " , diametro, " o comprimento sera ", comprimento, " e area sera ", area )
-
+}
 programa {
   funcao inicio() {
     // declaraçao de variaveis
