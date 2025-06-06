@@ -39,7 +39,7 @@ programa {
 programa {
   funcao inicio() {
     //Declaração de variáveis
-    real altura,peso_ideal
+    real altura,peso_ideal,media_arimetica
     
     //Declaração de constante
     const real k=72.7
