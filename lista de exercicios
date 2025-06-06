@@ -1,1 +1,20 @@
+programa {
+  funcao inicio() {
+    //declaracao de variaveis
+      real  nota1,nota2,nota3,nota4,media_arimetica
+      //entrada de dados
+      escreva("informe a primeira nota1")
+      leia(nota1)
+      escreva("informe a primeira nota2")
+      leia(nota2)
+      escreva("informe a primeira nota3")
+      leia(nota3)
+      escreva("informe a primeira nota4")
+      leia(nota4)
+      //processamento
+      media_arimetica=(nota1 + nota2 + nota3 + nota4)/4
+      //saida dos dados
+      escreva("a media arimetica e:media_arimetica")
+  }
+}
 
