@@ -88,3 +88,22 @@ programa {
 
     //Saida de Dados
     escreva("Com o raio ", raio , " o diametro sera " , diametro, " o comprimento sera ", comprimento, " e area sera ", area )
+
+programa {
+  funcao inicio() {
+    // declaraçao de variaveis
+    real celcius, fahrenheit, temperatura
+
+    //entrada de dados
+    escreva("informe a temperatura em celsius: ")
+    leia(celcius)
+
+    //processamento
+    fahrenheit = celcius * 9/5 + 32
+
+    //saida de dados
+    escreva(" a temperatura em fahrenhat é: ", fahrenheit)
+
+    
+  }
+}
