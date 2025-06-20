@@ -1,1 +1,192 @@
+03
+programa {
+  funcao inicio() {
+    //Declaração de variáveis
+      real n1,n2,n3,n4,media_Aritmetica
+
+      //Entrada de dados
+      escreva("Informe a primeira nota")
+      leia(n1)
+      escreva("Informe a segunda nota")
+      leia(n2)
+      escreva("Informe a terceira nota")
+      leia(n3)
+      escreva("Informe a quarta nota")
+      leia(n4)
+
+      //Processamento
+      media_Aritmetica= n1+ n2+ n3+n4/4
+
+      //Saída de dados 
+      escreva("A media aritmetica do aluno é", media_Aritmetica)
+      
+  
+}
+}
+
+04 
+programa {
+  funcao inicio() {
+    //Declaração de variáveis 
+    real janeiro,fevereiro,marco,media_Aritmetica
+
+    //Entrada de dados
+    escreva("Informe o valor gasto em janeiro")
+    leia (janeiro)
+    escreva("Informe o valor gasto em fevereiro")
+    leia(fevereiro)
+    escreva("Informe o valor gasto em março")
+    leia(marco)
+
+    //Processamento 
+    media_Aritmetica= (janeiro+fevereiro+marco) / 3
+
+    //Saída de dados 
+    escreva("A média aritmética é", media_Aritmetica)
+  }
+}
+
+05
+programa {
+  funcao inicio() {
+    //Declaração de variáveis
+    real altura,peso_ideal
+    
+    //Declaração de constante
+    const real k=72.7
+    const  inteiro b=58
+
+    //Entrada de dados 
+    escreva("Informe a altura")
+    leia(altura)
+
+    //Processamento
+    peso_ideal= k*altura-b
+
+    //Saída de dados
+    escreva("O seu peso ideal é", peso_ideal)
+  }
+
+06
+progama{
+  funcao inicio(){
+    //Declaração de variavel
+    real x, y, troca
+
+    //Entrada de dados 
+    escreva("Informe o primeiro valor: ")
+    leia(x)
+    escreva("Informe o segundo valor: ")
+    leia(y)
+
+    //Processamento 
+    troca = x 
+    x = y 
+    y = troca
+
+    // Saida de dados
+    escreva("O valor trocado de x ", x , " O valor trocado de y ", y)
+  }
+}
+}
+
+07
+programa {
+  funcao inicio() {
+    //Declaração de variável
+    real raio, diametro, comprimento, area
+
+    //Entrada de Dados
+    escreva("Informe o valor do raio: ")
+    leia(raio)
+
+    //Processamento
+    diametro = raio * 2
+    comprimento = 3.14 * diametro
+    area = (raio * raio) * 3.14
+
+    //Saida de Dados
+    escreva("Com o raio ", raio , " o diametro sera " , diametro, " o comprimento sera ", comprimento, " e area sera ", area )
+    
+}
+}
+
+08
+programa {
+  funcao inicio() {
+    // declaraçao de variaveis
+    real celcius, fahrenheit, temperatura
+
+    //entrada de dados
+    escreva("informe a temperatura em celsius: ")
+    leia(celcius)
+
+    //processamento
+    fahrenheit = celcius * 9/5 + 32
+
+    //saida de dados
+    escreva(" a temperatura em fahrenhat é: ", fahrenheit)
+
+    
+  }
+}
+
+09
+programa {
+  funcao inicio() {
+    //Declaração de variavel
+    inteiro num, centena, dezena, unidade, cont 
+
+    //Entrada de Dados 
+    escreva("Informe um número com três digitos: ")
+    leia(num)
+
+    //processamento
+    centena = num / 100
+    cont = num % 100
+    dezena = cont / 10
+    cont = cont % 10
+    unidade = cont
+    escreva("O número ao contrário é ", unidade, dezena, centena)
+  }
+}
+
+10
+programa {
+  funcao inicio() {
+    //Declaração de variavel
+     real ganhador1, ganhador2, ganhador3
+
+     //Declaração de constante
+     const inteiro valortotal = 780.000
+
+    //Entrada de Dados
+
+    //processamento
+     ganhador1 = valortotal * 0.46
+     ganhador2 = valortotal * 0.32
+     ganhador3 = valortotal * 0.22
+
+     //saida dos dados
+     escreva("O premio para o primeiro ganhador sera ", ganhador1 ,"00 O segundo sera ", ganhador2 , "00 E o terceiro ", ganhador3, "00")
+  }
+    //Declaração de variavel
+    real x, y, troca
+
+    //Entrada de dados 
+    escreva("Informe o primeiro valor: ")
+    leia(x)
+    escreva("Informe o segundo valor: ")
+    leia(y)
+
+    //Processamento 
+    troca = x 
+    x = y 
+    y = troca
+
+    // Saida de dados
+    escreva("O valor trocado de x ", x , " O valor trocado de y ", y)
+  }
+}
+
 
