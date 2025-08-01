@@ -42,3 +42,24 @@ int main(){
         }
     };
 }
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num, r1, r2, r3, r4;
+
+    printf("Digite um numero de 5 digitos: ");
+    scanf("%d", &num);
+
+    printf("a dezena de milhar é: %d\n", num / 10000);
+    r1 = num % 10000;
+    printf("a unidade de milhar é: %d\n", r1 / 1000);
+    r2 = r1 % 1000;
+    printf("a centena é: %d\n", r2 / 100);
+    r3 = r2 % 100;
+    printf("a dezena é: %d\n", r3 / 10);
+    r4 = r3 % 10;
+    printf("a unidade é: %d\n", r4); 
+
+    return 0;
+}
