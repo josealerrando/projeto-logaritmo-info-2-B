@@ -1,4 +1,4 @@
-1
+ 1
 #include <stdio.h>
 
 
@@ -28,4 +28,5 @@ int main(){
     tes = n % 10;
 
     printf("%d   %d   %d   %d   %d \n", dm, um, c, d , tes);
+return 0;
 }
