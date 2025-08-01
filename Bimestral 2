@@ -1,59 +1,44 @@
- 1
-#include <stdio.h>
+ #include <stdio.h>
 
-
-int main(){
-    int n, dm, um, c, d, tes;
-
-
-    printf("Informe um numero: \n");
-    scanf("%d", &n);
-
-    if (n<10000 || n>99999)
-    {
-
-        printf("digite numero valido");
-        return;
-
-    }
-    
-
-    dm = n / 10000;
-    tes = n % 10000;
-    um = tes / 1000;
-    tes = n % 1000;
-    c = tes / 100;
-    tes = n % 100;
-    d = tes / 10;
-    tes = n % 10;
-
-    printf("%d   %d   %d   %d   %d \n", dm, um, c, d , tes);
-return 0;
-}
-2 #include <stdio.h>
 
 
 int main(){
-    for (int n = 0; n <= 10; n++){
-        printf("Numero \t Quadrado \t Cubo \n %d \t %d \t  \t %d \n", n, n * n, n * n * n);
-    }
-}
+    int n1, n2, soma, sub, multi, divi, res, t;
 
-3 #include <stdio.h>
+    printf("Informe o primeiro numero: ");
+    scanf("%d", &n1);
 
+    printf("Informe o segundo numero: ");
+    scanf("%d", &n2);
 
-int main(){
-    long int mont, conta;
-    short int idade;
+    printf("Que operacao com %d e %d voce deseja realizar: \n 1.Soma \n 2.Subtracao \n 3.Multiplicacao \n 4. Divisao \n 5.Resto \n", n1, n2);
+    scanf("%d", &t);
 
-    printf("Informe sua idade: \n");
-    scanf("%hd", &idade);
-
-    printf("Informe o valor do montante a ser depositado: \n");
-    scanf("%ld", &mont);
-
-    printf("Informe o numero da conta: ");
-    scanf("%ld", &conta);
-
-    printf("Idade \t Montante \t Conta \n %hd \t %ld \t \t %ld \n", idade, mont, conta);
+    switch (t){
+        case 1:{
+            soma = n1 + n2;
+            printf("A soma e %d \n", soma);
+            break;
+        }
+        case 2:{
+            sub = n1 - n2;
+            printf("A subtracao e %d \n", sub);
+            break;
+        }
+        case 3:{
+            multi = n1 * n2;
+            printf("A multiplicacao e %d \n", multi);
+            break;
+        }
+        case 4:{
+            divi = n1 / n2;
+            printf("A divisao inteira e %d \n", divi);
+            break;
+        }
+        default:{
+            res = n1 % n2;
+            printf("O resto e %d \n", res);
+            break;
+        }
+    };
 }
