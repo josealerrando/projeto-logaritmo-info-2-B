@@ -30,3 +30,30 @@ int main(){
     printf("%d   %d   %d   %d   %d \n", dm, um, c, d , tes);
 return 0;
 }
+2 #include <stdio.h>
+
+
+int main(){
+    for (int n = 0; n <= 10; n++){
+        printf("Numero \t Quadrado \t Cubo \n %d \t %d \t  \t %d \n", n, n * n, n * n * n);
+    }
+}
+
+3 #include <stdio.h>
+
+
+int main(){
+    long int mont, conta;
+    short int idade;
+
+    printf("Informe sua idade: \n");
+    scanf("%hd", &idade);
+
+    printf("Informe o valor do montante a ser depositado: \n");
+    scanf("%ld", &mont);
+
+    printf("Informe o numero da conta: ");
+    scanf("%ld", &conta);
+
+    printf("Idade \t Montante \t Conta \n %hd \t %ld \t \t %ld \n", idade, mont, conta);
+}
