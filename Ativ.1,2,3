@@ -1,0 +1,59 @@
+1
+#include <stdio.h>
+
+
+int main(){
+    int n, dm, um, c, d, tes;
+
+
+    printf("Informe um numero: \n");
+    scanf("%d", &n);
+
+    if (n<10000 || n>99999)
+    {
+
+        printf("digite numero valido");
+        return;
+
+    }
+    
+
+    dm = n / 10000;
+    tes = n % 10000;
+    um = tes / 1000;
+    tes = n % 1000;
+    c = tes / 100;
+    tes = n % 100;
+    d = tes / 10;
+    tes = n % 10;
+
+    printf("%d   %d   %d   %d   %d \n", dm, um, c, d , tes);
+return 0;
+}
+2 #include <stdio.h>
+
+
+int main(){
+    for (int n = 0; n <= 10; n++){
+        printf("Numero \t Quadrado \t Cubo \n %d \t %d \t  \t %d \n", n, n * n, n * n * n);
+    }
+}
+
+3 #include <stdio.h>
+
+
+int main(){
+    long int mont, conta;
+    short int idade;
+
+    printf("Informe sua idade: \n");
+    scanf("%hd", &idade);
+
+    printf("Informe o valor do montante a ser depositado: \n");
+    scanf("%ld", &mont);
+
+    printf("Informe o numero da conta: ");
+    scanf("%ld", &conta);
+
+    printf("Idade \t Montante \t Conta \n %hd \t %ld \t \t %ld \n", idade, mont, conta);
+}
